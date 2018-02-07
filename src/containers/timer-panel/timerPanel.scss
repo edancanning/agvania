@@ -1,6 +1,7 @@
 @import "../../utils/variables";
 .timer-container {
   width: $timer-width;
+  float: left;
   .timer {
     font-size: 4rem;
     margin-bottom: 0.5rem;
@@ -18,9 +19,13 @@
     }
   }
   .stats {
+    margin-top: 1rem;
     .written-stats {
-      span {
-        font-weight: 500;
+      margin-bottom: 1rem;
+      p {
+        span {
+          font-weight: 500;
+        }
       }
     }
     .pomodoros {

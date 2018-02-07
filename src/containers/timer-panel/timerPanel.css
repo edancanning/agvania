@@ -1,0 +1,32 @@
+.timer-container {
+  width: 10rem;
+  float: left; }
+  .timer-container .timer {
+    font-size: 4rem;
+    margin-bottom: 0.5rem; }
+  .timer-container .start {
+    width: 100%; }
+  .timer-container .controls .control {
+    width: 45%;
+    min-width: 0; }
+  .timer-container .controls .restart {
+    float: right; }
+  .timer-container .stats {
+    margin-top: 1rem; }
+    .timer-container .stats .written-stats {
+      margin-bottom: 1rem; }
+      .timer-container .stats .written-stats p span {
+        font-weight: 500; }
+    .timer-container .stats .pomodoros .pomodoro {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 100%;
+      background-color: #eb5757;
+      display: inline-block;
+      margin: 0 0.5rem;
+      margin-bottom: 0.75rem; }
+    .timer-container .stats .pomodoros .pomodoro:nth-child(5n) {
+      margin-right: 0; }
+    .timer-container .stats .pomodoros .pomodoro:nth-child(6n),
+    .timer-container .stats .pomodoros .pomodoro:first-child {
+      margin-left: 0; }

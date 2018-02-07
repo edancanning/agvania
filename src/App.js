@@ -3,6 +3,7 @@ import { MuiThemeProvider, createMuiTheme } from "material-ui";
 import Header from "./components/header/Header";
 import MainPage from "./containers/main-page/MainPage";
 
+import "./reset.css";
 import "./utils/typography.css";
 import "./App.css";
 

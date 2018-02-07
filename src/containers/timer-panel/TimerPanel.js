@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Paper } from "material-ui";
 import { Pause, Restart } from "mdi-material-ui";
-import "./timer.css";
+import "./timerPanel.css";
 
-class Timer extends React.Component {
+class TimerPanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,7 +37,6 @@ class Timer extends React.Component {
 
   startTimer = () => {
     clearInterval(this.state.timer);
-    this.timer();
     this.setState({ timer: setInterval(this.timer, 1000), timerOn: true });
   };
 
@@ -126,4 +125,4 @@ class Timer extends React.Component {
   }
 }
 
-export default Timer;
+export default TimerPanel;

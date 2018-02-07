@@ -2,16 +2,22 @@
 
 @mixin typography {
   color: $font-color;
+  font-family: Roboto;
+}
+
+.h1 {
+  @include typography;
+  font-size: 1.45rem;
+  font-weight: 400;
 }
 
 .p {
   @include typography;
-  font-family: Roboto;
   font-size: 1rem;
 }
 
 .p-sm {
   @include typography;
-  font-family: Roboto;
+  line-height: 1.5rem;
   font-size: 0.9rem;
 }

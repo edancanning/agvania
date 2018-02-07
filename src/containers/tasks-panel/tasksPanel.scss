@@ -1,0 +1,17 @@
+@import "../../utils/variables";
+
+.tasks-panel-container {
+  width: $tasks-width;
+  float: right;
+  .header {
+    @include flexbox-vertical-center;
+    h1 {
+      @include flex(1);
+    }
+    .add-task {
+      svg {
+        color: $font-color;
+      }
+    }
+  }
+}

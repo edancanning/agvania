@@ -1,6 +1,17 @@
 import React from "react";
-import Timer from "../../containers/timer/Timer";
+import TimerPanel from "../timer-panel/TimerPanel";
+import TasksPanel from "../tasks-panel/TasksPanel";
 import "./mainPage.css";
+
+var mockTaskData = [
+  {
+    name: `Task ${Math.floor(Math.random() * 10) + 1}`,
+    expected: 1,
+    activeMinutes: Math.floor(Math.random() * 45),
+    activeSeconds: 16,
+    completed: false
+  }
+];
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -10,7 +21,8 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="main-page-container">
-        <Timer pomodoroLength={25} completedToday={6} />
+        <TimerPanel pomodoroLength={25} completedToday={6} />
+        <TasksPanel />
       </div>
     );
   }
