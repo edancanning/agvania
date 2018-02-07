@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header/Header";
+import Timer from "../../containers/timer/Timer";
 import "./mainPage.css";
 
 class MainPage extends React.Component {
@@ -10,7 +10,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="main-page-container">
-        <Header />
+        <Timer pomodoroLength={25} />
       </div>
     );
   }

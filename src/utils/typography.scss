@@ -1,0 +1,10 @@
+@import "./variables";
+
+@mixin typography {
+  color: $font-color;
+}
+
+.p {
+  @include typography;
+  font-family: Roboto;
+}

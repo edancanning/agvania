@@ -1,0 +1,12 @@
+.timer-container {
+  width: 10rem; }
+  .timer-container .timer {
+    font-size: 4rem;
+    margin-bottom: 0.5rem; }
+  .timer-container .start {
+    width: 100%; }
+  .timer-container .controls .control {
+    width: 45%;
+    min-width: 0; }
+  .timer-container .controls .restart {
+    float: right; }
