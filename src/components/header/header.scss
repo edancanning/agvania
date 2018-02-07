@@ -1,0 +1,11 @@
+@import "../../utils/variables";
+
+.header-component {
+  @include flexbox-vertical-center;
+  .logo {
+    @include flex(1);
+    img {
+      width: 7rem;
+    }
+  }
+}
