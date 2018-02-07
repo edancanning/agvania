@@ -1,3 +1,9 @@
 .p {
   color: #3d3d3d;
-  font-family: Roboto; }
+  font-family: Roboto;
+  font-size: 1rem; }
+
+.p-sm {
+  color: #3d3d3d;
+  font-family: Roboto;
+  font-size: 0.9rem; }

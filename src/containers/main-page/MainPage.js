@@ -10,7 +10,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="main-page-container">
-        <Timer pomodoroLength={25} />
+        <Timer pomodoroLength={25} completedToday={6} />
       </div>
     );
   }

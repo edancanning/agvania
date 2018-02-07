@@ -7,4 +7,11 @@
 .p {
   @include typography;
   font-family: Roboto;
+  font-size: 1rem;
+}
+
+.p-sm {
+  @include typography;
+  font-family: Roboto;
+  font-size: 0.9rem;
 }

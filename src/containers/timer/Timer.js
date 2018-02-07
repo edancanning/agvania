@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "material-ui";
+import { Button, Paper } from "material-ui";
 import { Pause, Restart } from "mdi-material-ui";
 import "./timer.css";
 
@@ -89,16 +89,38 @@ class Timer extends React.Component {
     </Button>
   );
 
+  renderPomodoros(n) {
+    var pomodoros = [];
+    for (let i = 0; i < n; i++) {
+      pomodoros.push(<Paper key={i} className="pomodoro" />);
+    }
+    return pomodoros;
+  }
+
   render() {
     return (
       <div className="timer-container">
-        {" "}
         <div className="timer p">
           {this.state.currentMinutes}:{this.secondsPrinter(
             this.state.currentSeconds
           )}
         </div>
         {this.state.timerOn ? this.controls : this.start}
+        <div className="stats">
+          <div className="written-stats">
+            <p className="p-sm">
+              <span>Today: </span>
+              {this.props.completedToday}
+            </p>
+            <p className="p-sm">
+              <span>This week: </span>
+              {this.props.completedToday}
+            </p>
+          </div>
+          <div className="pomodoros">
+            {this.renderPomodoros(this.props.completedToday)}
+          </div>
+        </div>
       </div>
     );
   }

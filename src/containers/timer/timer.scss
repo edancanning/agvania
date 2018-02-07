@@ -1,6 +1,6 @@
 @import "../../utils/variables";
 .timer-container {
-  width: 10rem;
+  width: $timer-width;
   .timer {
     font-size: 4rem;
     margin-bottom: 0.5rem;
@@ -15,6 +15,31 @@
     }
     .restart {
       float: right;
+    }
+  }
+  .stats {
+    .written-stats {
+      span {
+        font-weight: 500;
+      }
+    }
+    .pomodoros {
+      .pomodoro {
+        width: $timer-width * 0.12;
+        height: $timer-width * 0.12;
+        border-radius: 100%;
+        background-color: $primary;
+        display: inline-block;
+        margin: 0 $timer-width * 0.05;
+        margin-bottom: 0.75rem;
+      }
+      .pomodoro:nth-child(5n) {
+        margin-right: 0;
+      }
+      .pomodoro:nth-child(6n),
+      .pomodoro:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
